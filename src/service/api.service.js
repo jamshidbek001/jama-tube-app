@@ -6,7 +6,7 @@ const options = {
     maxResults: "50",
   },
   headers: {
-    'X-RapidAPI-Key': '97c415daffmshe44cd1d80327827p1d21fcjsn0b6e42f11249',
+    'X-RapidAPI-Key': '22cf78198amsh55082912806f6d8p19512ajsnbe6906240138',
     'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
   }
 };
@@ -14,6 +14,6 @@ const options = {
 export const ApiService = {
   async fetching(url) {
     const response = await axios.get(`${BASE_URL}/${url}`, options);
-    return response;
+    return response.data;
   },
 };
